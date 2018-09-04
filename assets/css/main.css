@@ -1,0 +1,31 @@
+.navitems{
+	display: flex;
+	/*margin-left:auto;*/
+	background-color: #000000;
+}
+li:nth-child(1) {
+	margin-right: auto; /*applied only to the right for the brand logo*/
+} 
+ul li{
+	padding: 0 1vw;
+	list-style: none;
+}
+
+li a {
+	text-decoration-line: none;
+	color: #f2f2f2;
+}
+@media screen and (max-width: 450px) {
+  /*changing the flexbox item to wrap*/
+  .navitems {
+    flex-wrap: wrap;
+    font-size: 3vw;
+  }
+  /*and taking 100% of the screen size*/
+  .navitems > li {
+    flex-basis: 100%;
+  }
+}
+.textColor{
+	color:#f2f2f2;
+}
